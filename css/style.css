@@ -1,0 +1,36 @@
+html,
+body{
+    height: 100%;
+    background-color: 	#FFFFFF !important;
+}
+
+.global-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+}
+
+.login-form{
+    width: 350px;
+    height: 450px;
+    padding: 50px;
+    background-color: #DCDCDC !important;
+    border-radius: 20px !important;
+    border: none;
+}
+
+.card-title{
+    font-weight: 350;
+    padding-top: 10px;
+}
+
+.btn{
+    background: #FF0000 !important;
+    color: #F8F8FF !important;
+    transform: translateY(10px);
+    font-size: 14px;
+    border-radius: 10px !important;
+    border: none;
+}
