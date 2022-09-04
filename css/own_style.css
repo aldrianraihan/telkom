@@ -1,0 +1,47 @@
+.open-ubuntu-300 {
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-style: normal;
+}
+
+.open-ubuntu-400 {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-style: normal;
+}
+
+.open-ubuntu-400i {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-style: italic;
+}
+
+.open-ubuntu-700 {
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-style: normal;
+}
+
+.fs-smaller {
+    font-size: smaller;
+}
+
+.bg-own-red {
+    background-color: #E71618;
+}
+
+.br-own-gray {
+    border: 1px solid darkgray;
+    border-radius: 3%;
+    padding: 2% 2% 2% 2%;
+}
+
+.btn-own-red {
+    background-color: #E71618;
+    color: #FFFFFF;
+}
+
+.btn-own-red:hover {
+    background-color: #e7383b;
+    color: #FFFFFF;
+}
