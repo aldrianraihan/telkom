@@ -41,7 +41,39 @@
     color: #FFFFFF;
 }
 
+.btn-own-pink {
+    background-color: #FFD9D9;
+    color: #000000;
+}
+
+.btn-own-light-pink {
+    background-color: #FFD9D9;
+    color: #E71618;
+}
+
 .btn-own-red:hover {
     background-color: #e7383b;
     color: #FFFFFF;
+}
+
+.text-own-color {
+    color: #E71618;
+}
+
+.bar-own-color {
+    background-color: #E71618;
+}
+
+.btn-own-size {
+    text-align: center;  
+    position: static;
+    width: 90px;
+    height: 15px; 
+    padding-top: 10px;  
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.09px;
 }

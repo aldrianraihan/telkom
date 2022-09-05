@@ -4801,7 +4801,7 @@ input[type="button"].btn-block {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #4e73df;
+  background-color: #E71618;
   border-color: #4e73df;
 }
 
@@ -10845,7 +10845,7 @@ a:focus {
 .chart-bar {
   position: relative;
   height: 10rem;
-  width: 100%;
+  width: 100% !important;
 }
 
 @media (min-width: 768px) {
@@ -10856,15 +10856,15 @@ a:focus {
 
 .chart-pie {
   position: relative;
-  height: 15rem;
-  width: 100%;
+  width:50% !important;
+  height:50% !important;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .chart-pie {
     height: calc(20rem - 43px) !important;
   }
-}
+} */
 
 .bg-login-image {
   background: url("https://source.unsplash.com/K4mSJ7kc0As/600x800");

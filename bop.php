@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/x-icon" href="img/telkom-icon.png" />
 
-    <title>Dashboard</title>
+    <title>BOP Tracker</title>
 
     <!-- icon & datatables-->
     <link href="assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -73,7 +73,7 @@
             </a>
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="index.php">
                     <i class="fas fa-fw fa-anchor"></i>
                     <span>Dashboard</span></a>
@@ -87,7 +87,7 @@
             </li>
 
             <!-- Nav Item - BOP Tracker -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="bop.php">
                     <i class="fas fa-fw fa-location-arrow"></i>
                     <span>BOP Tracker</span></a>
@@ -198,7 +198,7 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Report</h1>
+                        <h1 class="h3 mb-0 text-gray-800">BOP Tracker</h1>
                         <form method="get">
                             <div class="input-group">
                                 <select class="custom-select" id="inputGroupSelect04">

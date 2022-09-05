@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/x-icon" href="img/telkom-icon.png" />
 
-    <title>Dashboard</title>
+    <title>Budgeting</title>
 
     <!-- icon & datatables-->
     <link href="assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -73,14 +73,14 @@
             </a>
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="index.php">
                     <i class="fas fa-fw fa-anchor"></i>
                     <span>Dashboard</span></a>
             </li>
 
             <!-- Nav Item - Budgeting -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="budgeting.php">
                     <i class="fas fa-fw fa-coins"></i>
                     <span>Budgeting</span></a>
@@ -198,9 +198,9 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Report</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Budgeting Plan</h1>
                         <form method="get">
-                            <div class="input-group">
+                            <div class="input-group-sm">
                                 <select class="custom-select" id="inputGroupSelect04">
                                     <option selected>Choose...</option>
                                     <option value="1">2022</option>
@@ -208,30 +208,32 @@
                                     <option value="3">2020</option>
                                     <option value="3">2019</option>
                                 </select>
-                                <!-- <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
-                          </div> -->
                             </div>
                         </form>
                     </div>
-
                     <div class="d-sm-flex align-items-right justify-content-end mb-4">
-                        <button type="button" class="btn btn-own-red" data-bs-toggle="modal" data-bs-target="#exampleModalLg">Import Kontrak
+                        <button type="button" class="btn btn-sm btn-own-red" data-bs-toggle="modal" data-bs-target="#exampleModalLg">Import Kontrak
                         </button>
                     </div>
 
                     <!-- Content Row -->
-                    <div class="row justify-content-md-center">
+                    <div class="row justify-content-md-left">
 
                         <!-- Total semua kontrak -->
                         <div class="col-xl-4 col-md-6 mb-4">
-                            <div class="card border-left-danger shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                                                Total Nilai Kontrak</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">Rp. 2.000.000.000</div>
+                            <div class="row">
+                                <!-- Donut Chart -->
+                                <div class="col-sm-12">
+                                    <div class="card shadow mb-4">
+                                    <!-- Card Header -->
+                                        <div class="card-header py-3">
+                                            <h6 class="m-0 font-weight-bold text-own-color">Report</h6>
+                                        </div>
+                                        <!-- Card Body -->
+                                        <div class="card-body">
+                                            <div class="chart-pie pt-4">
+                                                <canvas id="myPieChart"></canvas>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -239,7 +241,7 @@
                         </div>
 
                         <!-- Total BAST -->
-                        <div class="col-xl-4 col-md-6 mb-4">
+                        <!-- <div class="col-xl-4 col-md-6 mb-4">
                             <div class="card border-left-danger shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -251,10 +253,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- Total Sisa Pekerjaan -->
-                        <div class="col-xl-4 col-md-6 mb-4">
+                        <!-- <div class="col-xl-4 col-md-6 mb-4">
                             <div class="card border-left-danger shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -266,13 +268,13 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="row justify-content-md-center">
 
                         <!-- Kontrak Aktif -->
-                        <div class="col-xl-4 col-md-6 mb-4">
+                        <!-- <div class="col-xl-4 col-md-6 mb-4">
                             <div class="card border-left-danger shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -284,10 +286,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- Kontrak Close -->
-                        <div class="col-xl-4 col-md-6 mb-4">
+                        <!-- <div class="col-xl-4 col-md-6 mb-4">
                             <div class="card border-left-danger shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -299,10 +301,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- Total Capex DID -->
-                        <div class="col-xl-4 col-md-6 mb-4">
+                        <!-- <div class="col-xl-4 col-md-6 mb-4">
                             <div class="card border-left-danger shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -314,32 +316,14 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
-                </div>
                 <!-- End of Main Content -->
 
-                <!-- <div id="columnchart_material" style="width: 800px; height: 500px;"></div> -->
-
-                <!-- Begin Bar Chart -->
-                <div class="container-fluid">
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-danger">Capex DID</h6>
-                        </div>
-                        <div class="card-body">
-                            <div class="chart-bar">
-                                <canvas id="myBarChart"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- Begin DataTables Content -->
-                <div class="container-fluid">
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-danger">Recent Kontrak</h6>
+                            <h6 class="m-0 font-weight-bold text-own-color">Recent Kontrak</h6>
                         </div>
 
                         <div class="card-body">
@@ -348,35 +332,34 @@
                                     <thead>
                                         <tr class="text-center">
                                             <th>Nomor Kontrak</th>
-                                            <th>Nama Mitra</th>
-                                            <th>EDC</th>
-                                            <th>TOC</th>
-                                            <th>Nilai Kontrak</th>
-                                            <th>BAST</th>
+                                            <th>Bulan</th>
+                                            <th>Target BAST</th>
+                                            <th>Actual BAST</th>
                                             <th>Sisa Pekerjaan</th>
-                                            <th>Status Pekerjaan</th>
-                                            <th>Status Kontrak</th>
+                                            <th>Progress</th>
+                                            <th>Status</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="text-center"><button type="button" class="btn btn-sm btn-own-red" data-toggle="modal" data-target="#nokontrak1">NPX400552022</button>
+                                            <td class="text-center"><button type="button" class="btn btn-sm font-weight-normal btn-own-pink" data-toggle="modal" data-target="#nokontrak1">NPX/40/03457934855/2022</button>
                                             </td>
-                                            <td>PT Telkom Indonesia</td>
-                                            <td>02 Jan 2021</td>
-                                            <td>30 Mei 2023</td>
-                                            <td>Rp. 4.000.000.000</td>
-                                            <td>Rp. 200.000.000</td>
-                                            <td>Rp. 1.200.000.000</td>
-                                            <td class="text-center"><button type="button" class="btn btn-sm btn-own-red" data-bs-toggle="modal" data-bs-target="#exampleModalLg">BAST</button></td>
-                                            <td class="text-center"><button type="button" class="btn btn-sm btn-own-red" data-bs-toggle="modal" data-bs-target="#exampleModalLg">Active</button></td>
+                                            <td class="text-center">PT Telkom Indonesia</td>
+                                            <td class="text-center">Januari</td>
+                                            <td class="text-center">4.000.000.000</td>
+                                            <td class="text-center">1.000.000.000</td>
+                                            <td class="text-center"><div class="progress" style="height: 15px;">
+                                                                        <div class="progress-bar bar-own-color" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                                                                    </div>
+                                            </td>
+                                            <td class="text-center"><button type="button" class="btn btn-own-size btn-own-light-pink" data-bs-toggle="modal" data-bs-target="#exampleModalLg">Done</button></td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
-                </div>
+                <!-- End of DataTables Content -->
 
                 <!-- Modal -->
                 <div class="modal fade" id="nokontrak1" tabindex="-1" aria-labelledby="nokontrak1" aria-hidden="true">

@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/x-icon" href="img/telkom-icon.png" />
 
-    <title>Dashboard</title>
+    <title>Generate SK BCDD</title>
 
     <!-- icon & datatables-->
     <link href="assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -73,7 +73,7 @@
             </a>
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="index.php">
                     <i class="fas fa-fw fa-anchor"></i>
                     <span>Dashboard</span></a>
@@ -100,7 +100,7 @@
                     <span>Document Tracker</span></a>
             </li>
             <!-- Nav Item - Generate SK BCDD -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="generate.php">
                     <i class="fas fa-fw fa-paper-plane"></i>
                     <span>Generate SK BCDD</span></a>
@@ -198,7 +198,7 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Report</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Generate SK BCDD</h1>
                         <form method="get">
                             <div class="input-group">
                                 <select class="custom-select" id="inputGroupSelect04">
