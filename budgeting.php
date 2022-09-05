@@ -225,7 +225,7 @@
                                 <!-- Donut Chart -->
                                 <div class="col-sm-12">
                                     <div class="card shadow mb-4">
-                                    <!-- Card Header -->
+                                        <!-- Card Header -->
                                         <div class="card-header py-3">
                                             <h6 class="m-0 font-weight-bold text-own-color">Report</h6>
                                         </div>
@@ -271,56 +271,7 @@
                         </div> -->
                     </div>
 
-                    <div class="row justify-content-md-center">
-
-                        <!-- Kontrak Aktif -->
-                        <!-- <div class="col-xl-4 col-md-6 mb-4">
-                            <div class="card border-left-danger shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                                                Kontrak Aktif</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">20</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-
-                        <!-- Kontrak Close -->
-                        <!-- <div class="col-xl-4 col-md-6 mb-4">
-                            <div class="card border-left-danger shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                                                Kontrak Close</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">04</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-
-                        <!-- Total Capex DID -->
-                        <!-- <div class="col-xl-4 col-md-6 mb-4">
-                            <div class="card border-left-danger shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                                                Total Capex DID</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">Rp 1.000.000.000</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                    </div>
-                <!-- End of Main Content -->
-
-                <!-- Begin DataTables Content -->
+                    <!-- Begin DataTables Content -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-own-color">Recent Kontrak</h6>
@@ -342,104 +293,158 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="text-center"><button type="button" class="btn btn-sm font-weight-normal btn-own-pink" data-toggle="modal" data-target="#nokontrak1">NPX/40/03457934855/2022</button>
+                                            <td class="text-center">
+                                                <button type="button" class="btn btn-sm btn-own-pink btn-block rounded-pill fs-smaller font-weight-bold" data-toggle="modal" data-target="#nokontrak1">NPX/40/03457934855/2022</button>
                                             </td>
-                                            <td class="text-center">PT Telkom Indonesia</td>
-                                            <td class="text-center">Januari</td>
-                                            <td class="text-center">4.000.000.000</td>
-                                            <td class="text-center">1.000.000.000</td>
-                                            <td class="text-center"><div class="progress" style="height: 15px;">
-                                                                        <div class="progress-bar bar-own-color" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
-                                                                    </div>
+                                            <td class="text-center pt-3">PT Telkom Indonesia</td>
+                                            <td class="text-center pt-3">Januari</td>
+                                            <td class="text-center pt-3">4.000.000.000</td>
+                                            <td class="text-center pt-3">1.000.000.000</td>
+                                            <td class="text-center pt-3">
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-own-red" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                                                </div>
                                             </td>
-                                            <td class="text-center"><button type="button" class="btn btn-own-size btn-own-light-pink" data-bs-toggle="modal" data-bs-target="#exampleModalLg">Done</button></td>
+                                            <td class="text-center">
+                                                <button type="button" class="btn btn-sm btn-own-light-pink btn-block rounded-pill fs-smaller" data-bs-toggle="modal">In Progress</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">
+                                                <button type="button" class="btn btn-sm btn-own-pink btn-block rounded-pill fs-smaller font-weight-bold" data-toggle="modal" data-target="#nokontrak1">NPX/40/03457934855/2022</button>
+                                            </td>
+                                            <td class="text-center pt-3">PT Telkom Indonesia</td>
+                                            <td class="text-center pt-3">Januari</td>
+                                            <td class="text-center pt-3">4.000.000.000</td>
+                                            <td class="text-center pt-3">1.000.000.000</td>
+                                            <td class="text-center pt-3">
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-own-red" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="button" class="btn btn-sm btn-own-red btn-block rounded-pill fs-smaller" data-bs-toggle="modal">Done</button>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
-                <!-- End of DataTables Content -->
+                    <!-- End of DataTables Content -->
 
-                <!-- Modal -->
-                <div class="modal fade" id="nokontrak1" tabindex="-1" aria-labelledby="nokontrak1" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="nokontrak1">Detail Sheet</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="row justify-content-center">
-                                    <div class="col-sm-5 br-own-gray mx-2">
-                                        <div class="row justify-content-between">
-                                            <div class="col-sm-10">
-                                                <div class="h6 xs-0 font-weight-bold text-gray-800">No. Kontrak</div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="nokontrak1" tabindex="-1" aria-labelledby="nokontrak1" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="nokontrak1">Detail Sheet</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row justify-content-center">
+                                        <div class="col-sm-5 br-own-gray mx-2">
+                                            <div class="row justify-content-between">
+                                                <div class="col-sm-10">
+                                                    <div class="h6 xs-0 font-weight-bold text-gray-800">No. Kontrak</div>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <button type="button" class="btn btn-danger btn-sm">Active</button>
+                                                </div>
                                             </div>
-                                            <div class="col-sm-2">
-                                                <button type="button" class="btn btn-danger btn-sm">Active</button>
-                                            </div>
-                                        </div>
 
-                                        <!-- row 2 -->
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class="h6 xs-0 font-weight-bold text-danger-800">
-                                                    NPX/40/03457934855/2022</div>
+                                            <!-- row 2 -->
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="h6 xs-0 font-weight-bold text-danger-800">
+                                                        NPX/40/03457934855/2022</div>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <!-- row 3 -->
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class="h6 xs-0 font-weight-bold text-gray-800">PT. Telkom Indonesia
+                                            <!-- row 3 -->
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="h6 xs-0 font-weight-bold text-gray-800">PT. Telkom Indonesia
+                                                    </div>
+                                                    <hr />
+                                                </div>
+                                            </div>
+
+                                            <!-- row 4 -->
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="h6 xs-0 font-weight-bold text-gray-800">EDC</div>
+                                                    <div class="h6 xs-0 font-weight-bold text-danger-800">2 Januari 2022
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="h6 xs-0 font-weight-bold text-gray-800">TOC</div>
+                                                    <div class="h6 xs-0 font-weight-bold text-danger-800">30 Mei 2022</div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="h6 xs-0 font-weight-bold text-gray-800">Status Pekerjaan
+                                                    </div>
+                                                    <button type="button" class="btn btn-danger btn-sm btn-block">BAST</button>
                                                 </div>
                                                 <hr />
                                             </div>
-                                        </div>
 
-                                        <!-- row 4 -->
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="h6 xs-0 font-weight-bold text-gray-800">EDC</div>
-                                                <div class="h6 xs-0 font-weight-bold text-danger-800">2 Januari 2022
+                                            <!-- row 5 -->
+                                            <div class="row mt-4">
+                                                <div class="col-sm-12">
+                                                    <div class="h6 xs-0 font-weight-bold text-gray-800">Detail Kerjasama
+                                                    </div>
+                                                    <div class="h5 xs-0 font-weight-bold text-gray-800">
+                                                        NPX/40/03457934855/2022</div>
+                                                    <hr />
                                                 </div>
                                             </div>
-                                            <div class="col">
-                                                <div class="h6 xs-0 font-weight-bold text-gray-800">TOC</div>
-                                                <div class="h6 xs-0 font-weight-bold text-danger-800">30 Mei 2022</div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="h6 xs-0 font-weight-bold text-gray-800">Status Pekerjaan
-                                                </div>
-                                                <button type="button" class="btn btn-danger btn-sm btn-block">BAST</button>
-                                            </div>
-                                            <hr />
-                                        </div>
 
-                                        <!-- row 5 -->
-                                        <div class="row mt-4">
-                                            <div class="col-sm-12">
-                                                <div class="h6 xs-0 font-weight-bold text-gray-800">Detail Kerjasama
+                                            <!-- row 6 -->
+                                            <div class="row">
+                                                <div class="col-sm-12 mb-2">
+                                                    <div class="card border-left-danger shadow h-100 py-2">
+                                                        <div class="card-body">
+                                                            <div class="row no-gutters align-items-center">
+                                                                <div class="col mr-2">
+                                                                    <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
+                                                                        Nilai Kontrak</div>
+                                                                    <div class="h5 mb-0 font-weight-bold text-gray-800">Rp 4.000.000.000
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="h5 xs-0 font-weight-bold text-gray-800">
-                                                    NPX/40/03457934855/2022</div>
-                                                <hr />
                                             </div>
-                                        </div>
-
-                                        <!-- row 6 -->
-                                        <div class="row">
-                                            <div class="col-sm-12 mb-2">
-                                                <div class="card border-left-danger shadow h-100 py-2">
-                                                    <div class="card-body">
-                                                        <div class="row no-gutters align-items-center">
-                                                            <div class="col mr-2">
-                                                                <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                                                                    Nilai Kontrak</div>
-                                                                <div class="h5 mb-0 font-weight-bold text-gray-800">Rp 4.000.000.000
+                                            <div class="row">
+                                                <div class="col-sm-12 mb-2">
+                                                    <div class="card border-left-danger shadow h-100 py-2">
+                                                        <div class="card-body">
+                                                            <div class="row no-gutters align-items-center">
+                                                                <div class="col mr-2">
+                                                                    <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
+                                                                        BAST</div>
+                                                                    <div class="h5 mb-0 font-weight-bold text-gray-800">Rp 200.000.000
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12 mb-2">
+                                                    <div class="card border-left-danger shadow h-100 py-2">
+                                                        <div class="card-body">
+                                                            <div class="row no-gutters align-items-center">
+                                                                <div class="col mr-2">
+                                                                    <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
+                                                                        Sisa Pekerjaan</div>
+                                                                    <div class="h5 mb-0 font-weight-bold text-gray-800">Rp 1.200.000.000
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -447,52 +452,20 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-sm-12 mb-2">
-                                                <div class="card border-left-danger shadow h-100 py-2">
-                                                    <div class="card-body">
-                                                        <div class="row no-gutters align-items-center">
-                                                            <div class="col mr-2">
-                                                                <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                                                                    BAST</div>
-                                                                <div class="h5 mb-0 font-weight-bold text-gray-800">Rp 200.000.000
-                                                                </div>
-                                                            </div>
+                                        <div class="col-sm-6 mx-2">
+                                            <div class="row br-own-gray">
+                                                <!-- Donut Chart -->
+                                                <div class="col-sm-12">
+                                                    <div class="card shadow mb-4">
+                                                        <!-- Card Header - Dropdown -->
+                                                        <div class="card-header py-3">
+                                                            <h6 class="m-0 font-weight-bold text-primary">Progress Mile</h6>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-12 mb-2">
-                                                <div class="card border-left-danger shadow h-100 py-2">
-                                                    <div class="card-body">
-                                                        <div class="row no-gutters align-items-center">
-                                                            <div class="col mr-2">
-                                                                <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                                                                    Sisa Pekerjaan</div>
-                                                                <div class="h5 mb-0 font-weight-bold text-gray-800">Rp 1.200.000.000
-                                                                </div>
+                                                        <!-- Card Body -->
+                                                        <div class="card-body">
+                                                            <div class="chart-pie pt-4">
+                                                                <canvas id="myPieChart"></canvas>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 mx-2">
-                                        <div class="row br-own-gray">
-                                            <!-- Donut Chart -->
-                                            <div class="col-sm-12">
-                                                <div class="card shadow mb-4">
-                                                    <!-- Card Header - Dropdown -->
-                                                    <div class="card-header py-3">
-                                                        <h6 class="m-0 font-weight-bold text-primary">Progress Mile</h6>
-                                                    </div>
-                                                    <!-- Card Body -->
-                                                    <div class="card-body">
-                                                        <div class="chart-pie pt-4">
-                                                            <canvas id="myPieChart"></canvas>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -500,78 +473,77 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Footer -->
-                <footer class="sticky-footer bg-white">
-                    <div class="container my-relative">
-                        <div class="copyright text-center my-relative">
-                            <span>Copyright &copy; Telkom Indonesia 2022</span>
+                    <!-- Footer -->
+                    <footer class="sticky-footer bg-white">
+                        <div class="container my-relative">
+                            <div class="copyright text-center my-relative">
+                                <span>Copyright &copy; Telkom Indonesia 2022</span>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- End of Footer -->
+
+                </div>
+                <!-- End of Content Wrapper -->
+
+            </div>
+            <!-- End of Page Wrapper -->
+
+            <!-- Scroll to Top Button-->
+            <a class="scroll-to-top rounded" href="#page-top">
+                <i class="fas fa-angle-up"></i>
+            </a>
+
+            <!-- Logout Modal-->
+            <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                            <a class="btn btn-danger" href="login.html">Logout</a>
                         </div>
                     </div>
-                </footer>
-                <!-- End of Footer -->
-
-            </div>
-            <!-- End of Content Wrapper -->
-
-        </div>
-        <!-- End of Page Wrapper -->
-
-        <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#page-top">
-            <i class="fas fa-angle-up"></i>
-        </a>
-
-        <!-- Logout Modal-->
-        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                    <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <a class="btn btn-danger" href="login.html">Logout</a>
-                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Bootstrap core JavaScript-->
-        <script src="assets/jquery/jquery.min.js"></script>
-        <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <!-- Bootstrap core JavaScript-->
+            <script src="assets/jquery/jquery.min.js"></script>
+            <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-        <!-- Core plugin JavaScript-->
-        <script src="assets/jquery-easing/jquery.easing.min.js"></script>
+            <!-- Core plugin JavaScript-->
+            <script src="assets/jquery-easing/jquery.easing.min.js"></script>
 
-        <!-- Custom scripts for all pages-->
-        <script src="js/sb-admin-2.min.js"></script>
+            <!-- Custom scripts for all pages-->
+            <script src="js/sb-admin-2.min.js"></script>
 
-        <!-- Page level plugins -->
-        <script src="assets/datatables/jquery.dataTables.min.js"></script>
-        <script src="assets/datatables/dataTables.bootstrap4.min.js"></script>
+            <!-- Page level plugins -->
+            <script src="assets/datatables/jquery.dataTables.min.js"></script>
+            <script src="assets/datatables/dataTables.bootstrap4.min.js"></script>
 
-        <!-- Page level custom scripts -->
-        <script src="js/demo/datatables-demo.js"></script>
+            <!-- Page level custom scripts -->
+            <script src="js/demo/datatables-demo.js"></script>
 
-        <!-- Page level plugins -->
-        <script src="assets/chart.js/Chart.min.js"></script>
+            <!-- Page level plugins -->
+            <script src="assets/chart.js/Chart.min.js"></script>
 
-        <!-- Bar chart script -->
-        <script src="js/demo/chart-bar-demo.js"></script>
-        <script src="js/demo/chart-pie-demo.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <!-- Bar chart script -->
+            <script src="js/demo/chart-bar-demo.js"></script>
+            <script src="js/demo/chart-pie-demo.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </body>
 

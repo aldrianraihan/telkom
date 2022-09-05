@@ -360,7 +360,7 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="text-center"><button type="button" class="btn btn-sm btn-own-red" data-toggle="modal" data-target="#nokontrak1">NPX400552022</button>
+                                            <td class="text-center"><button type="button" class="btn btn-sm btn-own-pink btn-block rounded-pill" data-toggle="modal" data-target="#nokontrak1">NPX400552022</button>
                                             </td>
                                             <td>PT Telkom Indonesia</td>
                                             <td>02 Jan 2021</td>
@@ -368,8 +368,10 @@
                                             <td>Rp. 4.000.000.000</td>
                                             <td>Rp. 200.000.000</td>
                                             <td>Rp. 1.200.000.000</td>
-                                            <td class="text-center"><button type="button" class="btn btn-sm btn-own-red" data-bs-toggle="modal" data-bs-target="#exampleModalLg">BAST</button></td>
-                                            <td class="text-center"><button type="button" class="btn btn-sm btn-own-red" data-bs-toggle="modal" data-bs-target="#exampleModalLg">Active</button></td>
+                                            <td class="text-center">
+                                                <button type="button" class="btn btn-sm btn-own-light-pink btn-block rounded-pill" data-bs-toggle="modal">BAST</button>
+                                            </td>
+                                            <td class="text-center"><button type="button" class="btn btn-sm btn-own-red btn-block rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModalLg">Active</button></td>
                                         </tr>
                                     </tbody>
                                 </table>

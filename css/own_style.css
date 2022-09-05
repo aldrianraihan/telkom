@@ -65,15 +65,9 @@
 }
 
 .btn-own-size {
-    text-align: center;  
+    text-align: center;
     position: static;
     width: 90px;
-    height: 15px; 
-    padding-top: 10px;  
-
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16.09px;
+    height: 15px;
+    padding-top: 10px;
 }
