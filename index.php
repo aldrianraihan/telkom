@@ -200,7 +200,7 @@
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Report</h1>
                         <form method="get">
-                            <div class="input-group">
+                            <div class="input-group-sm">
                                 <select class="custom-select" id="inputGroupSelect04">
                                     <option selected>Choose...</option>
                                     <option value="1">2022</option>
@@ -216,7 +216,7 @@
                     </div>
 
                     <div class="d-sm-flex align-items-right justify-content-end mb-4">
-                        <button type="button" class="btn btn-own-red" data-bs-toggle="modal" data-bs-target="#exampleModalLg">Import Kontrak
+                        <button type="button" class="btn btn-sm btn-own-red" data-bs-toggle="modal" data-bs-target="#exampleModalLg">Import Kontrak
                         </button>
                     </div>
 
@@ -339,7 +339,7 @@
                 <div class="container-fluid">
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-danger">Recent Kontrak</h6>
+                            <h6 class="m-0 font-weight-bold text-own-color">Recent Kontrak</h6>
                         </div>
 
                         <div class="card-body">
@@ -360,7 +360,7 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="text-center"><button type="button" class="btn btn-sm btn-own-pink btn-block rounded-pill" data-toggle="modal" data-target="#nokontrak1">NPX400552022</button>
+                                            <td class="text-center"><button type="button" class="btn btn-sm btn-own-pink btn-block rounded-pill" data-toggle="modal" data-target="#nokontrak1">NPX/40/03457934855/2022</button>
                                             </td>
                                             <td>PT Telkom Indonesia</td>
                                             <td>02 Jan 2021</td>

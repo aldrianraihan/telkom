@@ -231,8 +231,20 @@
                                         </div>
                                         <!-- Card Body -->
                                         <div class="card-body">
-                                            <div class="chart-pie pt-4">
-                                                <canvas id="myPieChart"></canvas>
+                                            <div class="container">
+                                             <div class="row">
+                                                <div class="chart-pie pt-4">
+                                                    <canvas id="myPieChart1"></canvas>
+                                                </div>
+                                                <div class="col-sm">
+                                                    <div class="text-xs font-weight-bolder text-own-color text-uppercase mb-1">Target BAST</div>
+                                                    <div class="text-xs font-weight-bold text-gray-800">Rp.1.000.000.000</div>
+                                                    <br></br>
+                                                    <div class="text-xs font-weight-bolder text-own-color text-uppercase mb-1">Actual BAST</div>
+                                                    <div class="text-xs font-weight-bold text-gray-800">Rp.500.000.000</div>
+                                                </div>
+                                                </div>
+                                             </div>
                                             </div>
                                         </div>
                                     </div>

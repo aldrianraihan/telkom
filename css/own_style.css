@@ -60,6 +60,9 @@
     color: #E71618;
 }
 
+.font-weight-bolder{
+    font-weight: 900;
+}
 .bar-own-color {
     background-color: #E71618;
 }
