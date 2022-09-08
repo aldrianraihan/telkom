@@ -26,6 +26,10 @@
     font-size: smaller;
 }
 
+.fs-medium {
+    font-size: medium;
+}
+
 .bg-own-red {
     background-color: #E71618;
 }

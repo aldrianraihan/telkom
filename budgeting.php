@@ -54,7 +54,7 @@
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col">
-                                            <h6 class="font-weight-bold text-own-color">Report</h6>
+                                            <h6 class="text-own-black open-ubuntu-700 h5">Report</h6>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -68,7 +68,7 @@
                                                 </div>
                                                 <div class="col-sm-10 mt-n1 ml-n2">
                                                     <div class="fs-smaller font-weight-bolder text-own-red">Target BAST</div>
-                                                    <div class="fs-smaller font-weight-bold text-own-black">Rp.1.000.000.000</div>
+                                                    <div class="text-own-black open-ubuntu-700 h5">Rp.1.000.000.000</div>
                                                 </div>
                                             </div>
                                             <div class="row mt-4">
@@ -77,7 +77,7 @@
                                                 </div>
                                                 <div class="col-sm-10 mt-n1 ml-n2">
                                                     <div class="fs-smaller font-weight-bolder text-own-red">Actual BAST</div>
-                                                    <div class="fs-smaller font-weight-bold text-own-black">Rp.500.000.000</div>
+                                                    <div class="text-own-black open-ubuntu-700 h5">Rp.500.000.000</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -94,7 +94,7 @@
                                             <div class="row">
                                                 <div class="col">
                                                     <h6 class="font-weight-bold text-own-red">Total Sisa Pekerjaan</h6>
-                                                    <h6 class="font-weight-bold text-own-black">Rp. 1.000.000.000</h6>
+                                                    <h6 class="text-own-black open-ubuntu-700 h5">Rp. 1.000.000.000</h6>
                                                 </div>
                                             </div>
                                             <div class="row mt-2">
