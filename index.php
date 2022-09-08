@@ -1,61 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" type="image/x-icon" href="img/telkom-icon.png" />
-
-    <title>Dashboard</title>
-
-    <!-- icon & datatables-->
-    <link href="assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-
-    <!-- custom font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
-
-    <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <link href="css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- own css -->
-    <link href="css/own_style.css" rel="stylesheet">
-
-    <!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['bar']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses', 'Profit'],
-          ['Jan', 1000, 400, 200],
-          ['Feb', 1170, 460, 250],
-          ['Marc', 660, 1120, 300],
-          ['April', 1030, 540, 350]
-        ]);
-
-        var options = {
-          chart: {
-            title: 'Company Performance',
-            subtitle: 'Sales, Expenses, and Profit: 2014-2017',
-          }
-        };
-
-        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
-
-        chart.draw(data, google.charts.Bar.convertOptions(options));
-      }
-    </script> -->
-
-</head>
+<?php include('header.php') ?>
 
 <body id="page-top" class="open-ubuntu-400">
 
@@ -63,55 +6,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-own-red sidebar sidebar-dark accordion" id="accordionSidebar">
-
-            <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-text ml-n2">
-                    <img src="img/Telkom-logo-reverse.png" width="100%">
-                </div>
-            </a>
-
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="index.php">
-                    <i class="fas fa-fw fa-anchor"></i>
-                    <span>Dashboard</span></a>
-            </li>
-
-            <!-- Nav Item - Budgeting -->
-            <li class="nav-item">
-                <a class="nav-link" href="budgeting.php">
-                    <i class="fas fa-fw fa-coins"></i>
-                    <span>Budgeting</span></a>
-            </li>
-
-            <!-- Nav Item - BOP Tracker -->
-            <li class="nav-item">
-                <a class="nav-link" href="bop.php">
-                    <i class="fas fa-fw fa-location-arrow"></i>
-                    <span>BOP Tracker</span></a>
-            </li>
-
-            <!-- Nav Item - Document Tracker -->
-            <li class="nav-item">
-                <a class="nav-link" href="doctrack.php">
-                    <i class="fas fa-fw fa-file"></i>
-                    <span>Document Tracker</span></a>
-            </li>
-            <!-- Nav Item - Generate SK BCDD -->
-            <li class="nav-item">
-                <a class="nav-link" href="generate.php">
-                    <i class="fas fa-fw fa-paper-plane"></i>
-                    <span>Generate SK BCDD</span></a>
-            </li>
-
-            <!-- Sidebar Toggler (Sidebar) -->
-            <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
-
-        </ul>
+        <?php include('sidebar.php') ?>
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -121,77 +16,7 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
-                    <!-- Sidebar Toggle (Topbar) -->
-                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                        <i class="fa fa-bars"></i>
-                    </button>
-
-                    <!--Topbar Search-->
-                    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-own-red" type="button">
-                                    <i class="fas fa-search fa-sm"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-
-                    <!--Topbar Navbar-->
-                    <ul class="navbar-nav ml-auto">
-
-                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-                        <li class="nav-item dropdown no-arrow d-sm-none">
-                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-search fa-fw"></i>
-                            </a>
-                            <!-- Dropdown - Messages -->
-                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
-                                <form class="form-inline mr-auto w-100 navbar-search">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-danger" type="button">
-                                                <i class="fas fa-search fa-sm"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </li>
-
-                        <div class="topbar-divider d-none d-sm-block"></div>
-
-                        <!-- Nav Item - User Information -->
-                        <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Nadira Mumtaz</span>
-                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
-                            </a>
-                            <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i> Profile
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i> Settings
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i> Activity Log
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i> Logout
-                                </a>
-                            </div>
-                        </li>
-
-                    </ul>
-
-                </nav>
+                <?php include('topbar.php') ?>
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
@@ -200,17 +25,19 @@
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Report</h1>
                         <form method="get">
-                            <div class="input-group-sm">
-                                <select class="custom-select" id="inputGroupSelect04">
+                            <div class="input-group">
+                                <select class="custom-select">
                                     <option selected>Choose...</option>
                                     <option value="1">2022</option>
                                     <option value="2">2021</option>
                                     <option value="3">2020</option>
                                     <option value="3">2019</option>
                                 </select>
-                                <!-- <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
-                          </div> -->
+                                <div class="input-group-append">
+                                    <button class="btn btn-own-red" type="submit">
+                                        <i class="fas fa-search fa-sm"></i>
+                                    </button>
+                                </div>
                             </div>
                         </form>
                     </div>
@@ -339,7 +166,7 @@
                 <div class="container-fluid">
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-own-color">Recent Kontrak</h6>
+                            <h6 class="m-0 font-weight-bold text-own-red">Recent Kontrak</h6>
                         </div>
 
                         <div class="card-body">
@@ -360,18 +187,18 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="text-center"><button type="button" class="btn btn-sm btn-own-pink btn-block rounded-pill" data-toggle="modal" data-target="#nokontrak1">NPX/40/03457934855/2022</button>
+                                            <td class="text-center"><button type="button" class="btn btn-sm btn-own-pink btn-block rounded-pill fs-smaller" data-toggle="modal" data-target="#nokontrak1">NPX/40/03457934855/2022</button>
                                             </td>
                                             <td>PT Telkom Indonesia</td>
                                             <td>02 Jan 2021</td>
                                             <td>30 Mei 2023</td>
-                                            <td>Rp. 4.000.000.000</td>
-                                            <td>Rp. 200.000.000</td>
-                                            <td>Rp. 1.200.000.000</td>
+                                            <td>4.000.000.000</td>
+                                            <td>200.000.000</td>
+                                            <td>1.200.000.000</td>
                                             <td class="text-center">
-                                                <button type="button" class="btn btn-sm btn-own-light-pink btn-block rounded-pill" data-bs-toggle="modal">BAST</button>
+                                                <button type="button" class="btn btn-sm btn-own-light-pink btn-block rounded-pill fs-smaller" data-bs-toggle="modal">BAST</button>
                                             </td>
-                                            <td class="text-center"><button type="button" class="btn btn-sm btn-own-red btn-block rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModalLg">Active</button></td>
+                                            <td class="text-center"><button type="button" class="btn btn-sm btn-own-red btn-block rounded-pill fs-smaller" data-bs-toggle="modal" data-bs-target="#exampleModalLg">Active</button></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -567,30 +394,7 @@
             </div>
         </div>
 
-        <!-- Bootstrap core JavaScript-->
-        <script src="assets/jquery/jquery.min.js"></script>
-        <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-        <!-- Core plugin JavaScript-->
-        <script src="assets/jquery-easing/jquery.easing.min.js"></script>
-
-        <!-- Custom scripts for all pages-->
-        <script src="js/sb-admin-2.min.js"></script>
-
-        <!-- Page level plugins -->
-        <script src="assets/datatables/jquery.dataTables.min.js"></script>
-        <script src="assets/datatables/dataTables.bootstrap4.min.js"></script>
-
-        <!-- Page level custom scripts -->
-        <script src="js/demo/datatables-demo.js"></script>
-
-        <!-- Page level plugins -->
-        <script src="assets/chart.js/Chart.min.js"></script>
-
-        <!-- Bar chart script -->
-        <script src="js/demo/chart-bar-demo.js"></script>
-        <script src="js/demo/chart-pie-demo.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <?php include('footer.php') ?>
 
 </body>
 

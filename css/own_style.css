@@ -56,13 +56,18 @@
     color: #FFFFFF;
 }
 
-.text-own-color {
+.text-own-red {
     color: #E71618;
 }
 
-.font-weight-bolder{
+.text-own-black {
+    color: #000000;
+}
+
+.font-weight-bolder {
     font-weight: 900;
 }
+
 .bar-own-color {
     background-color: #E71618;
 }
@@ -73,4 +78,29 @@
     width: 90px;
     height: 15px;
     padding-top: 10px;
+}
+
+.sq-red {
+    background: #e7383b;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 0.2rem;
+}
+
+.sq-grey {
+    background: #D9D9D9;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 0.2rem;
+}
+
+.sq-pink {
+    background: #FFD9D9;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 0.2rem;
+}
+
+.donut-chart-budget {
+    height: 13.2rem !important;
 }
