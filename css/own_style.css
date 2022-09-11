@@ -30,12 +30,25 @@
     font-size: medium;
 }
 
+.fs-larger {
+    font-size: larger;
+}
+
 .bg-own-red {
     background-color: #E71618;
 }
 
+.bg-own-black {
+    background-color: #000000;
+}
+
 .bg-own-gray {
     background-color: #F4F4F4;
+}
+
+.bg-own-pink {
+    background-color: #FFD9D9;
+    color: #000000;
 }
 
 .br-own-gray {
@@ -70,6 +83,14 @@
 
 .text-own-black {
     color: #000000;
+}
+
+.text-own-white {
+    color: #ffffff;
+}
+
+.text-own-gray {
+    color: #848484;
 }
 
 .font-weight-bolder {

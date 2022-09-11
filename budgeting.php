@@ -228,7 +228,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
+                                    <tr class="text-own-black">
                                         <td class="text-center">
                                             <button type="button" class="btn btn-sm btn-own-pink btn-block rounded-pill fs-smaller font-weight-bold" data-toggle="modal" data-target="#nokontrak1">NPX/40/03457934855/2022</button>
                                         </td>
@@ -245,7 +245,7 @@
                                             <button type="button" class="btn btn-sm btn-own-light-pink btn-block rounded-pill fs-smaller" data-bs-toggle="modal">In Progress</button>
                                         </td>
                                     </tr>
-                                    <tr>
+                                    <tr class="text-own-black">
                                         <td class="text-center">
                                             <button type="button" class="btn btn-sm btn-own-pink btn-block rounded-pill fs-smaller font-weight-bold" data-toggle="modal" data-target="#nokontrak1">NPX/40/03457934855/2022</button>
                                         </td>
@@ -370,92 +370,215 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-6 mx-2">
-                                        <div class="row br-own-gray">
-
+                                        <div class="row br-10px br-own-gray">
+                                            <div class="col">
+                                                <div class="fs-smaller">Progress</div>
+                                                <div class="row mt-2">
+                                                    <div class="col">
+                                                        <div class="fs-medium text-own-red float-left">Actual BAST</div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="fs-medium text-own-red float-right">Target BAST</div>
+                                                    </div>
+                                                </div>
+                                                <div class="progress mt-1" style="height: 40px;">
+                                                    <div class="progress-bar bg-own-red fs-medium br-10px" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="75">75%</div>
+                                                </div>
+                                                <div class="row mt-2">
+                                                    <div class="col">
+                                                        <div class="fs-smaller text-own-gray float-left">BAST saat ini adalah 200.000.000</div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="fs-smaller text-own-black open-ubuntu-700 float-right">4.000.000.000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col br-10px br-own-gray mx-1">
+                                                <div class="fs-larger text-own-red my-3 ml-2 open-ubuntu-700">BAST</div>
+                                                <table class="table fs-smaller">
+                                                    <tr class="bg-own-pink">
+                                                        <th>Bulan</th>
+                                                        <th>Bulan</th>
+                                                    </tr>
+                                                    <tr class="text-own-black">
+                                                        <td>Januari</td>
+                                                        <td>1000.000.000</td>
+                                                    </tr>
+                                                    <tr class="text-own-black">
+                                                        <td>Febuari</td>
+                                                        <td>0</td>
+                                                    </tr>
+                                                    <tr class="text-own-black">
+                                                        <td>Maret</td>
+                                                        <td>1000.000.000</td>
+                                                    </tr>
+                                                    <tr class="text-own-black">
+                                                        <td>April</td>
+                                                        <td>1000.000.000</td>
+                                                    </tr>
+                                                    <tr class="text-own-black">
+                                                        <td>Mei</td>
+                                                        <td>0</td>
+                                                    </tr>
+                                                    <tr class="text-own-black">
+                                                        <td>Juni</td>
+                                                        <td>0</td>
+                                                    </tr>
+                                                    <tr class="text-own-black">
+                                                        <td>Juli</td>
+                                                        <td>0</td>
+                                                    </tr>
+                                                    <tr class="text-own-black">
+                                                        <td>Agustus</td>
+                                                        <td>0</td>
+                                                    </tr>
+                                                    <tr class="text-own-black">
+                                                        <td>September</td>
+                                                        <td>0</td>
+                                                    </tr>
+                                                    <tr class="text-own-black">
+                                                        <td>Oktober</td>
+                                                        <td>0</td>
+                                                    </tr>
+                                                    <tr class="text-own-black">
+                                                        <td>November</td>
+                                                        <td>100.000.000</td>
+                                                    </tr>
+                                                    <tr class="text-own-black">
+                                                        <td>Desember</td>
+                                                        <td>0</td>
+                                                    </tr>
+                                                    <tr class="text-own-black">
+                                                        <th>Total</th>
+                                                        <th>400.000.000</th>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="col br-10px br-own-gray mx-1">
+                                                <div class="col float-left">
+                                                    <div class="fs-larger text-own-red open-ubuntu-700 my-3">Progress</div>
+                                                </div>
+                                                <table class="table fs-smaller">
+                                                    <tr class="bg-own-pink">
+                                                        <th>Pekerjaan</th>
+                                                        <th>Nilai</th>
+                                                    </tr>
+                                                    <tr class="text-own-black">
+                                                        <td>Preparing</td>
+                                                        <td>100.000.000</td>
+                                                    </tr>
+                                                    <tr class="text-own-black">
+                                                        <td>Delivering</td>
+                                                        <td>100.000.000</td>
+                                                    </tr>
+                                                    <tr class="text-own-black">
+                                                        <td>MOS</td>
+                                                        <td>100.000.000</td>
+                                                    </tr>
+                                                    <tr class="text-own-black">
+                                                        <td>Testcomm</td>
+                                                        <td>100.000.000</td>
+                                                    </tr>
+                                                    <tr class="text-own-black">
+                                                        <td>UT</td>
+                                                        <td>100.000.000</td>
+                                                    </tr>
+                                                    <tr class="text-own-black">
+                                                        <td>BAST</td>
+                                                        <td>100.000.000</td>
+                                                    </tr>
+                                                    <tr class="text-own-black">
+                                                        <th>Total</th>
+                                                        <th>600.000.000</th>
+                                                    </tr>
+                                                </table>
+                                                <div class="fs-smaller text-own-red my-3 mr-2">Updated 20 Januari 2022</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Footer -->
-                <footer class="sticky-footer bg-white">
-                    <div class="container my-relative">
-                        <div class="copyright text-center my-relative">
-                            <span>Copyright &copy; Telkom Indonesia 2022</span>
+                    <!-- Footer -->
+                    <footer class="sticky-footer bg-white">
+                        <div class="container my-relative">
+                            <div class="copyright text-center my-relative">
+                                <span>Copyright &copy; Telkom Indonesia 2022</span>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- End of Footer -->
+
+                </div>
+                <!-- End of Content Wrapper -->
+
+            </div>
+            <!-- End of Page Wrapper -->
+
+            <!-- Scroll to Top Button-->
+            <a class="scroll-to-top rounded" href="#page-top">
+                <i class="fas fa-angle-up"></i>
+            </a>
+
+            <!-- Logout Modal-->
+            <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                            <a class="btn btn-danger" href="login.html">Logout</a>
                         </div>
                     </div>
-                </footer>
-                <!-- End of Footer -->
-
-            </div>
-            <!-- End of Content Wrapper -->
-
-        </div>
-        <!-- End of Page Wrapper -->
-
-        <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#page-top">
-            <i class="fas fa-angle-up"></i>
-        </a>
-
-        <!-- Logout Modal-->
-        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                    <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <a class="btn btn-danger" href="login.html">Logout</a>
-                    </div>
                 </div>
             </div>
-        </div>
 
-        <?php include('footer.php') ?>
+            <?php include('footer.php') ?>
 
-        <script>
-            // Pie Chart Budgeting
-            var ctx = document.getElementById("pieChartReport");
-            var myPieChart1 = new Chart(ctx, {
-                type: 'doughnut',
-                data: {
-                    datasets: [{
-                        data: [25, 75],
-                        backgroundColor: ['#D9D9D9', '#E71618'],
-                        hoverBackgroundColor: ['#D9D9D9', '#E71618'],
-                    }],
-                },
-                options: {
-                    maintainAspectRatio: false,
-                    tooltips: {
-                        backgroundColor: "rgb(255,255,255)",
-                        bodyFontColor: "#858796",
-                        borderColor: '#dddfeb',
-                        borderWidth: 1,
-                        xPadding: 15,
-                        yPadding: 15,
-                        displayColors: false,
-                        caretPadding: 10,
+            <script>
+                // Pie Chart Budgeting
+                var ctx = document.getElementById("pieChartReport");
+                var myPieChart1 = new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                        datasets: [{
+                            data: [25, 75],
+                            backgroundColor: ['#D9D9D9', '#E71618'],
+                            hoverBackgroundColor: ['#D9D9D9', '#E71618'],
+                        }],
                     },
-                    legend: {
-                        display: false
+                    options: {
+                        maintainAspectRatio: false,
+                        tooltips: {
+                            backgroundColor: "rgb(255,255,255)",
+                            bodyFontColor: "#858796",
+                            borderColor: '#dddfeb',
+                            borderWidth: 1,
+                            xPadding: 15,
+                            yPadding: 15,
+                            displayColors: false,
+                            caretPadding: 10,
+                        },
+                        legend: {
+                            display: false
+                        },
+                        cutoutPercentage: 100,
                     },
-                    cutoutPercentage: 100,
-                },
-            });
-        </script>
+                });
+            </script>
 
 </body>
 
