@@ -2,37 +2,6 @@
 Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
 Chart.defaults.global.defaultFontColor = '#858796';
 
-// Pie Chart Budgeting
-var ctx = document.getElementById("myPieChart1");
-var myPieChart1 = new Chart(ctx, {
-    type: 'doughnut',
-    data: {
-        labels: ["Actual BAST", "Target BAST"],
-        datasets: [{
-            data: [25, 75],
-            backgroundColor: ['#D9D9D9', '#E71618'],
-            hoverBackgroundColor: ['#D9D9D9', '#E71618'],
-        }],
-    },
-    options: {
-        maintainAspectRatio: false,
-        tooltips: {
-            backgroundColor: "rgb(255,255,255)",
-            bodyFontColor: "#858796",
-            borderColor: '#dddfeb',
-            borderWidth: 1,
-            xPadding: 15,
-            yPadding: 15,
-            displayColors: false,
-            caretPadding: 10,
-        },
-        legend: {
-            display: false
-        },
-        cutoutPercentage: 80,
-    },
-});
-
 // Pie Chart Example
 var ctx = document.getElementById("myPieChart");
 var myPieChart = new Chart(ctx, {

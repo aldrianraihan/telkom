@@ -23,11 +23,11 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Budgeting Plan</h1>
+                        <h1 class="h3 mb-0 ">Budgeting Plan</h1>
                         <form method="get">
                             <div class="input-group">
                                 <select class="custom-select">
-                                    <option selected>Choose...</option>
+                                    <option selected>Year</option>
                                     <option value="1">2022</option>
                                     <option value="2">2021</option>
                                     <option value="3">2020</option>
@@ -42,7 +42,7 @@
                         </form>
                     </div>
                     <div class="d-sm-flex align-items-right justify-content-end mb-4">
-                        <button type="button" class="btn btn-sm btn-own-red" data-bs-toggle="modal" data-bs-target="#exampleModalLg">Import Kontrak
+                        <button type="button" class="br-10px btn btn-sm btn-own-red" data-bs-toggle="modal" data-bs-target="#exampleModalLg">Import Kontrak
                         </button>
                     </div>
 
@@ -52,16 +52,42 @@
                             <div class="card shadow br-own-gray">
                                 <!-- Card Body -->
                                 <div class="card-body">
-                                    <div class="row">
-                                        <div class="col">
-                                            <h6 class="text-own-black open-ubuntu-700 h5">Report</h6>
+                                    <div class="row justify-content-between">
+                                        <div class="col-sm-2">
+                                            <h6 class="text-own-red open-ubuntu-700 h5">Report</h6>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <form method="get">
+                                                <div class="input-group">
+                                                    <select class="custom-select">
+                                                        <option selected>Month</option>
+                                                        <option value="1">Januari</option>
+                                                        <option value="2">Febuari</option>
+                                                        <option value="3">Maret</option>
+                                                        <option value="4">April</option>
+                                                        <option value="5">Mei</option>
+                                                        <option value="6">Juni</option>
+                                                        <option value="7">Juli</option>
+                                                        <option value="8">Agustus</option>
+                                                        <option value="9">September</option>
+                                                        <option value="10">Oktober</option>
+                                                        <option value="11">November</option>
+                                                        <option value="12">Desember</option>
+                                                    </select>
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-own-red" type="submit">
+                                                            <i class="fas fa-search fa-sm"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="chart-pie">
-                                            <canvas class="donut-chart-budget" id="myPieChart1"></canvas>
+                                            <canvas class="donut-chart-budget" id="pieChartReport"></canvas>
                                         </div>
-                                        <div class="col">
+                                        <div class="col mt-5">
                                             <div class="row mb-3">
                                                 <div class="col-sm-2">
                                                     <div class="sq-red"></div>
@@ -127,7 +153,16 @@
                                                             <div class="sq-red"></div>
                                                         </div>
                                                         <div class="col-sm-9 mt-n1">
-                                                            <div class="h5 text-own-black">200</div>
+                                                            <div class="row justify-content-between">
+                                                                <div class="col-sm-6 float-left">
+                                                                    <div class="h5 text-own-black open-ubuntu-700">200</div>
+                                                                </div>
+                                                                <div class="col-sm-6 text-right">
+                                                                    <div class="px-n2">
+                                                                        <a href="#" class="fs-smaller text-own-red open-ubuntu-700">Detil</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -150,7 +185,16 @@
                                                             <div class="sq-pink"></div>
                                                         </div>
                                                         <div class="col-sm-9 mt-n1">
-                                                            <div class="h5 text-own-black">200</div>
+                                                            <div class="row justify-content-between">
+                                                                <div class="col-sm-6 float-left">
+                                                                    <div class="h5 text-own-black open-ubuntu-700">200</div>
+                                                                </div>
+                                                                <div class="col-sm-6 text-right">
+                                                                    <div class="px-n2">
+                                                                        <a href="#" class="fs-smaller text-own-red open-ubuntu-700">Detil</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -230,7 +274,7 @@
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="nokontrak1">Detail Sheet</h5>
+                                <h5 class="modal-title text-own-black" id="nokontrak1">Detail Sheet</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -238,27 +282,23 @@
                             <div class="modal-body">
                                 <div class="row justify-content-center">
                                     <div class="col-sm-5 br-own-gray mx-2">
-                                        <div class="row justify-content-between">
-                                            <div class="col-sm-10">
-                                                <div class="h6 xs-0 font-weight-bold text-gray-800">No. Kontrak</div>
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <button type="button" class="btn btn-danger btn-sm">Active</button>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="text-own-black open-ubuntu-400 fs-smaller">No. Kontrak</div>
                                             </div>
                                         </div>
 
                                         <!-- row 2 -->
-                                        <div class="row">
+                                        <div class="row mt-2">
                                             <div class="col-sm-12">
-                                                <div class="h6 xs-0 font-weight-bold text-danger-800">
-                                                    NPX/40/03457934855/2022</div>
+                                                <div class="btn btn-sm btn-own-pink rounded-pill fs-medium font-weight-bold">NPX/40/03457934855/2022</div>
                                             </div>
                                         </div>
 
                                         <!-- row 3 -->
-                                        <div class="row">
+                                        <div class="row mt-2">
                                             <div class="col-sm-12">
-                                                <div class="h6 xs-0 font-weight-bold text-gray-800">PT. Telkom Indonesia
+                                                <div class="h6 text-own-black">PT. Telkom Indonesia
                                                 </div>
                                                 <hr />
                                             </div>
@@ -267,18 +307,16 @@
                                         <!-- row 4 -->
                                         <div class="row">
                                             <div class="col">
-                                                <div class="h6 xs-0 font-weight-bold text-gray-800">EDC</div>
-                                                <div class="h6 xs-0 font-weight-bold text-danger-800">2 Januari 2022
-                                                </div>
+                                                <div class="fs-smaller text-own-black">EDC</div>
+                                                <div class="text-own-black mt-2">2 Januari 2022</div>
                                             </div>
                                             <div class="col">
-                                                <div class="h6 xs-0 font-weight-bold text-gray-800">TOC</div>
-                                                <div class="h6 xs-0 font-weight-bold text-danger-800">30 Mei 2022</div>
+                                                <div class="fs-smaller text-own-black">TOC</div>
+                                                <div class="text-own-black mt-2">30 Mei 2022</div>
                                             </div>
                                             <div class="col">
-                                                <div class="h6 xs-0 font-weight-bold text-gray-800">Status Pekerjaan
-                                                </div>
-                                                <button type="button" class="btn btn-danger btn-sm btn-block">BAST</button>
+                                                <div class="fs-smaller text-own-black">Status</div>
+                                                <div class="btn btn-own-light-pink">In progress</div>
                                             </div>
                                             <hr />
                                         </div>
@@ -286,59 +324,46 @@
                                         <!-- row 5 -->
                                         <div class="row mt-4">
                                             <div class="col-sm-12">
-                                                <div class="h6 xs-0 font-weight-bold text-gray-800">Detail Kerjasama
-                                                </div>
-                                                <div class="h5 xs-0 font-weight-bold text-gray-800">
-                                                    NPX/40/03457934855/2022</div>
+                                                <div class="fs-smaller text-own-black">Detail Kerjasama</div>
+                                                <div class="text-own-black mt-2">NPX/40/03457934855/2022</div>
+                                                <br><br><br><br><br>
                                                 <hr />
                                             </div>
                                         </div>
 
                                         <!-- row 6 -->
                                         <div class="row">
-                                            <div class="col-sm-12 mb-2">
-                                                <div class="card border-left-danger shadow h-100 py-2">
-                                                    <div class="card-body">
-                                                        <div class="row no-gutters align-items-center">
-                                                            <div class="col mr-2">
-                                                                <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                                                                    Nilai Kontrak</div>
-                                                                <div class="h5 mb-0 font-weight-bold text-gray-800">Rp 4.000.000.000
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                            <div class="col-sm-12 mb-3">
+                                                <div class="bg-own-gray br-10px pl-3 py-3">
+                                                    <div class="text-own-red fs-smaller">
+                                                        Target BAST
+                                                    </div>
+                                                    <div class="text-own-black fs-medium">
+                                                        Rp. 4.000.000.000
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-sm-12 mb-2">
-                                                <div class="card border-left-danger shadow h-100 py-2">
-                                                    <div class="card-body">
-                                                        <div class="row no-gutters align-items-center">
-                                                            <div class="col mr-2">
-                                                                <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                                                                    BAST</div>
-                                                                <div class="h5 mb-0 font-weight-bold text-gray-800">Rp 200.000.000
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                            <div class="col-sm-12 mb-3">
+                                                <div class="bg-own-gray br-10px pl-3 py-3">
+                                                    <div class="text-own-red fs-smaller">
+                                                        Actual BAST
+                                                    </div>
+                                                    <div class="text-own-black fs-medium">
+                                                        Rp. 200.000.000
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-sm-12 mb-2">
-                                                <div class="card border-left-danger shadow h-100 py-2">
-                                                    <div class="card-body">
-                                                        <div class="row no-gutters align-items-center">
-                                                            <div class="col mr-2">
-                                                                <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                                                                    Sisa Pekerjaan</div>
-                                                                <div class="h5 mb-0 font-weight-bold text-gray-800">Rp 1.200.000.000
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                            <div class="col-sm-12 mb-3">
+                                                <div class="bg-own-gray br-10px pl-3 py-3">
+                                                    <div class="text-own-red fs-smaller">
+                                                        Sisa Pekerjaan
+                                                    </div>
+                                                    <div class="text-own-black fs-medium">
+                                                        Rp. 1.200.000.000
                                                     </div>
                                                 </div>
                                             </div>
@@ -346,21 +371,7 @@
                                     </div>
                                     <div class="col-sm-6 mx-2">
                                         <div class="row br-own-gray">
-                                            <!-- Donut Chart -->
-                                            <div class="col-sm-12">
-                                                <div class="card shadow mb-4">
-                                                    <!-- Card Header - Dropdown -->
-                                                    <div class="card-header py-3">
-                                                        <h6 class="m-0 font-weight-bold text-primary">Progress Mile</h6>
-                                                    </div>
-                                                    <!-- Card Body -->
-                                                    <div class="card-body">
-                                                        <div class="chart-pie pt-4">
-                                                            <canvas id="myPieChart"></canvas>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -413,6 +424,38 @@
         </div>
 
         <?php include('footer.php') ?>
+
+        <script>
+            // Pie Chart Budgeting
+            var ctx = document.getElementById("pieChartReport");
+            var myPieChart1 = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    datasets: [{
+                        data: [25, 75],
+                        backgroundColor: ['#D9D9D9', '#E71618'],
+                        hoverBackgroundColor: ['#D9D9D9', '#E71618'],
+                    }],
+                },
+                options: {
+                    maintainAspectRatio: false,
+                    tooltips: {
+                        backgroundColor: "rgb(255,255,255)",
+                        bodyFontColor: "#858796",
+                        borderColor: '#dddfeb',
+                        borderWidth: 1,
+                        xPadding: 15,
+                        yPadding: 15,
+                        displayColors: false,
+                        caretPadding: 10,
+                    },
+                    legend: {
+                        display: false
+                    },
+                    cutoutPercentage: 100,
+                },
+            });
+        </script>
 
 </body>
 

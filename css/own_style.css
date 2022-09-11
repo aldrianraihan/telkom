@@ -34,6 +34,10 @@
     background-color: #E71618;
 }
 
+.bg-own-gray {
+    background-color: #F4F4F4;
+}
+
 .br-own-gray {
     border: 1px solid darkgray;
     border-radius: 3%;
@@ -107,4 +111,8 @@
 
 .donut-chart-budget {
     height: 13.2rem !important;
+}
+
+.br-10px {
+    border-radius: 10px;
 }
