@@ -1,5 +1,7 @@
 <?php include('header.php') ?>
 
+</head>
+
 <body id="page-top" class="open-ubuntu-400">
 
     <!-- Page Wrapper -->
