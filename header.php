@@ -28,4 +28,39 @@
     <!-- own css -->
     <link href="css/own_style.css" rel="stylesheet">
 
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {
+            'packages': ['bar']
+        });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Month', 'Preparing', 'Delivering', 'MOS', 'Testcomm', 'UT', 'BAST'],
+                ['Jan', 1000, 400, 200, 1000, 400, 200],
+                ['Feb', 1170, 460, 250, 1170, 460, 250],
+                ['Mar', 660, 1120, 300, 660, 1120, 300],
+
+                ['Apr', 1000, 400, 200, 1000, 400, 200],
+                ['Mei', 1170, 460, 250, 1170, 460, 250],
+                ['Jun', 660, 1120, 300, 660, 1120, 300],
+                ['Jul', 1000, 400, 200, 1000, 400, 200],
+                ['Aug', 1170, 460, 250, 1170, 460, 250],
+                ['Sep', 660, 1120, 300, 660, 1120, 300],
+                ['Oct', 1000, 400, 200, 1000, 400, 200],
+                ['Nov', 1170, 460, 250, 1170, 460, 250],
+                ['Des', 660, 1120, 300, 660, 1120, 300]
+            ]);
+
+            var options = {
+                chart: {}
+            };
+
+            var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+            chart.draw(data, google.charts.Bar.convertOptions(options));
+        }
+    </script>
+
 </head>

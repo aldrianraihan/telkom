@@ -42,8 +42,7 @@
                         </form>
                     </div>
                     <div class="d-sm-flex align-items-right justify-content-end mb-4">
-                        <button type="button" class="br-10px btn btn-sm btn-own-red" data-bs-toggle="modal" data-bs-target="#exampleModalLg">Import Kontrak
-                        </button>
+                        <a href="#" class="br-10px btn btn-sm btn-own-red">Import Kontrak</a>
                     </div>
 
                     <div class="row mb-4">
@@ -115,7 +114,6 @@
                             <div class="row">
                                 <div class="col">
                                     <div class="card shadow br-own-gray">
-                                        <!-- Card Body -->
                                         <div class="card-body">
                                             <div class="row">
                                                 <div class="col">
@@ -242,7 +240,7 @@
                                             </div>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-own-light-pink btn-block rounded-pill fs-smaller" data-bs-toggle="modal">In Progress</button>
+                                            <button type="button" class="btn btn-sm btn-own-light-pink btn-block rounded-pill fs-smaller">In Progress</button>
                                         </td>
                                     </tr>
                                     <tr class="text-own-black">
@@ -259,7 +257,7 @@
                                             </div>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-own-red btn-block rounded-pill fs-smaller" data-bs-toggle="modal">Done</button>
+                                            <button type="button" class="btn btn-sm btn-own-red btn-block rounded-pill fs-smaller">Done</button>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -306,6 +304,16 @@
 
                                         <!-- row 4 -->
                                         <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="fs-smaller text-own-black">Detail Kerjasama</div>
+                                                <div class="text-own-black mt-2">NPX/40/03457934855/2022</div>
+                                                <br><br><br><br><br>
+                                                <hr />
+                                            </div>
+                                        </div>
+
+                                        <!-- row 5 -->
+                                        <div class="row">
                                             <div class="col">
                                                 <div class="fs-smaller text-own-black">EDC</div>
                                                 <div class="text-own-black mt-2">2 Januari 2022</div>
@@ -321,18 +329,8 @@
                                             <hr />
                                         </div>
 
-                                        <!-- row 5 -->
-                                        <div class="row mt-4">
-                                            <div class="col-sm-12">
-                                                <div class="fs-smaller text-own-black">Detail Kerjasama</div>
-                                                <div class="text-own-black mt-2">NPX/40/03457934855/2022</div>
-                                                <br><br><br><br><br>
-                                                <hr />
-                                            </div>
-                                        </div>
-
                                         <!-- row 6 -->
-                                        <div class="row">
+                                        <div class="row mt-4">
                                             <div class="col-sm-12 mb-3">
                                                 <div class="bg-own-gray br-10px pl-3 py-3">
                                                     <div class="text-own-red fs-smaller">

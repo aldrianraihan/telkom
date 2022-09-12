@@ -20,7 +20,6 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Report</h1>
@@ -41,122 +40,165 @@
                             </div>
                         </form>
                     </div>
-
                     <div class="d-sm-flex align-items-right justify-content-end mb-4">
-                        <button type="button" class="btn btn-sm btn-own-red" data-bs-toggle="modal" data-bs-target="#exampleModalLg">Import Kontrak
-                        </button>
+                        <a href="#" class="br-10px btn btn-sm btn-own-red">Import Kontrak</a>
                     </div>
 
                     <!-- Content Row -->
-                    <div class="row justify-content-md-center">
-
-                        <!-- Total semua kontrak -->
-                        <div class="col-xl-4 col-md-6 mb-4">
-                            <div class="card border-left-danger shadow h-100 py-2">
+                    <div class="row">
+                        <div class="col card-group">
+                            <div class="card shadow br-10px br-own-gray">
                                 <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                                                Total Nilai Kontrak</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">Rp. 2.000.000.000</div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="fs-smaller text-own-red">Total Nilai Kontrak</div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="h3 text-own-black open-ubuntu-700">Rp. 53.000.000.000</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Total BAST -->
-                        <div class="col-xl-4 col-md-6 mb-4">
-                            <div class="card border-left-danger shadow h-100 py-2">
+                        <div class="col card-group">
+                            <div class="card shadow br-10px br-own-gray">
                                 <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                                                Total BAST</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">Rp. 2.000.000.000</div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="fs-smaller text-own-red">Total BAST</div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="h3 text-own-black open-ubuntu-700">Rp. 2.000.000.000</div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="fs-smaller text-own-gray">dari</div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="fs-smaller text-own-gray float-right">progress</div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="fs-smaller text-own-red">Rp. 53.000.000.000</div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="fs-smaller text-own-red float-right mr-4">90%</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Total Sisa Pekerjaan -->
-                        <div class="col-xl-4 col-md-6 mb-4">
-                            <div class="card border-left-danger shadow h-100 py-2">
+                        <div class="col card-group">
+                            <div class="card shadow br-10px br-own-gray">
                                 <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">Total Sisa Pekerjaan</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">Rp.1.000.000.000</div>
-                                            <div class="row no-gutters align-items-center"></div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="fs-smaller text-own-red">Total Sisa Pekerjaan</div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row justify-content-md-center">
-
-                        <!-- Kontrak Aktif -->
-                        <div class="col-xl-4 col-md-6 mb-4">
-                            <div class="card border-left-danger shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                                                Kontrak Aktif</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">20</div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="h3 text-own-black open-ubuntu-700">Rp. 1.000.000.000</div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Kontrak Close -->
-                        <div class="col-xl-4 col-md-6 mb-4">
-                            <div class="card border-left-danger shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                                                Kontrak Close</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">04</div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="fs-smaller text-own-gray">dari</div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="fs-smaller text-own-gray float-right">progress</div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Total Capex DID -->
-                        <div class="col-xl-4 col-md-6 mb-4">
-                            <div class="card border-left-danger shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                                                Total Capex DID</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">Rp 1.000.000.000</div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="fs-smaller text-own-red">Rp. 53.000.000.000</div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="fs-smaller text-own-red float-right mr-4">95%</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- End of Main Content -->
 
-                <!-- <div id="columnchart_material" style="width: 800px; height: 500px;"></div> -->
-
-                <!-- Begin Bar Chart -->
-                <div class="container-fluid">
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-danger">Capex DID</h6>
+                    <div class="row mt-4">
+                        <div class="col card-group">
+                            <div class="card shadow br-10px br-own-gray">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="fs-smaller text-own-red">Kontrak Aktif</div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="h2 text-own-black open-ubuntu-700">20</div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <a href="#" class="fs-smaller text-own-red">Detil</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <div class="chart-bar">
-                                <canvas id="myBarChart"></canvas>
+                        <div class="col card-group">
+                            <div class="card shadow br-10px br-own-gray">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="fs-smaller text-own-red">Kontrak Selesai</div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="h2 text-own-black open-ubuntu-700">4</div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <a href="#" class="fs-smaller text-own-red">Detil</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col card-group">
+                            <div class="card shadow br-10px br-own-gray">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="fs-smaller text-own-red">Total Progress</div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="h3 text-own-black open-ubuntu-700">Rp. 1.000.000.000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-danger">Progress</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-bar">
+                                        <div id="columnchart_material" style="width: 100%; height:100%"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -199,6 +241,20 @@
                                                 <button type="button" class="btn btn-sm btn-own-light-pink btn-block rounded-pill fs-smaller" data-bs-toggle="modal">BAST</button>
                                             </td>
                                             <td class="text-center"><button type="button" class="btn btn-sm btn-own-red btn-block rounded-pill fs-smaller" data-bs-toggle="modal" data-bs-target="#exampleModalLg">Active</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"><button type="button" class="btn btn-sm btn-own-pink btn-block rounded-pill fs-smaller" data-toggle="modal" data-target="#nokontrak1">NPX/40/03457934855/2022</button>
+                                            </td>
+                                            <td>PT Telkom Indonesia</td>
+                                            <td>02 Jan 2021</td>
+                                            <td>30 Mei 2023</td>
+                                            <td>2.500.000.000</td>
+                                            <td>200.000.000</td>
+                                            <td>1.200.000.000</td>
+                                            <td class="text-center">
+                                                <button type="button" class="btn btn-sm btn-own-light-pink btn-block rounded-pill fs-smaller" data-bs-toggle="modal">UT</button>
+                                            </td>
+                                            <td class="text-center"><button type="button" class="btn btn-sm btn-own-red btn-block rounded-pill fs-smaller" data-bs-toggle="modal" data-bs-target="#exampleModalLg">Close</button></td>
                                         </tr>
                                     </tbody>
                                 </table>
